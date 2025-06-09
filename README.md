@@ -70,7 +70,7 @@ ShopNest/
    - Backend:
      ```bash
      cd server
-     npm start
+     node index.js
      ```
    - Frontend:
      ```bash

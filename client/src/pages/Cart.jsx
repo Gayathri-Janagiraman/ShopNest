@@ -23,7 +23,7 @@ function Cart() {
         const auth = getAuth();
         const token = await auth.currentUser?.getIdToken();
 
-        const res = await fetch("http://localhost:5000/api/create-checkout-session", {
+        const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/create-checkout-session`,{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

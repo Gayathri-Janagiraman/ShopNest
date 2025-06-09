@@ -1,20 +1,3 @@
-// function Footer(){
-//     return(
-//     <div>
-//        {/* Footer */}
-//          <footer className="mt-20 p-6 text-center text-sm text-gray-500">
-//             <div className="flex justify-center gap-4 mb-2">
-//                <p>Terms</p>
-//                <p>Privacy</p>
-//                <p>Help</p>
-//             </div>
-//             <p>© {new Date().getFullYear()} ShopNest. All rights reserved.</p>
-//          </footer>
-//       </div>
-//     )
-// }
-// export default Footer;
-
 function Footer() {
    return (
       <div>

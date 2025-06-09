@@ -10,7 +10,7 @@ function LandingPage() {
 
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/products")
+      fetch(`${process.env.REACT_APP_API_BASE_URL}/api/products`)
 
             .then((res) => res.json())
 
@@ -20,7 +20,7 @@ function LandingPage() {
                 const updated = trending.map((product) => ({
                     ...product,
                     id: product._id,
-                    image: `http://localhost:5000/images/${product.image}`,
+                    image: `${process.env.REACT_APP_API_BASE_URL}/images/${product.image}`,
                 }));
                 setTrending(updated);
                 setLoading(false);

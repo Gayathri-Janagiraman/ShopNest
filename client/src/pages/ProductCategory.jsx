@@ -11,14 +11,14 @@ function ProductCategory() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products?category=${category}`)
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/api/products?category=${category}`)
       .then((res) => res.json())
       .then((data) => {
 
         const updatedProducts = data.map((product) => ({
           ...product,
           id: product._id, 
-          image: `http://localhost:5000/images/${product.image}`,
+          image:`${process.env.REACT_APP_API_BASE_URL}/images/${product.image}`,
         }));
 
 

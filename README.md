@@ -1,95 +1,201 @@
-# 🛍️ ShopNest – Mini E-commerce Platform
+# 🛍️ ShopNest
 
-**ShopNest** is a full-stack e-commerce web application built using the **MERN stack** (MongoDB, Express.js, React, Node.js) with **Firebase Authentication** and **Stripe Payment Integration**. It allows users to browse products, add them to a cart, and securely make test payments. Admin users can manage the product catalog through protected routes.
+ShopNest is a full-stack e-commerce web application built using the MERN Stack. It provides a seamless online shopping experience with secure user authentication, product management, shopping cart functionality, and Stripe-powered test payments.
+
+## 🌐 Live Demo
+
+👉 YOUR_VERCEL_LINK_HERE
 
 ---
 
-## 🔧 Tech Stack
+## 📖 About the Project
 
-- **Frontend**: React, Tailwind CSS, React Router
-- **Backend**: Node.js, Express.js, MongoDB (Atlas)
-- **Authentication**: Firebase Auth
-- **Payments**: Stripe
-- **Deployment**: Vercel (frontend), Fly.io/Render (backend)
+ShopNest is designed to simulate a modern e-commerce platform where users can browse products, manage their shopping cart, and complete secure test payments. The application also includes protected admin functionality for managing the product catalog.
 
 ---
 
 ## ✨ Features
 
 ### 🛒 User Features
-- View products in a responsive grid
-- Add/remove items to/from the cart
-- View total cart value and item count
-- Secure Firebase-based signup/login
-- Protected checkout flow using Stripe
-- Mobile responsive UI
+
+* Browse products in a responsive interface.
+* Add and remove products from the cart.
+* Persistent cart using localStorage.
+* Secure user authentication with Firebase.
+* Protected checkout process.
+* Stripe test payment integration.
+* Mobile-friendly and responsive design.
 
 ### 🔐 Admin Features
-- Add, update, or delete products (via admin-only routes)
-- Admin access protected by middleware
+
+* Add new products.
+* Update existing products.
+* Delete products.
+* Protected admin-only routes.
+* Middleware-based access control.
 
 ---
 
-## 📁 Folder Structure
+## 🛠️ Tech Stack
 
+### Frontend
+
+* React.js
+* React Router
+* Tailwind CSS
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB Atlas
+
+### Authentication
+
+* Firebase Authentication
+
+### Payment Gateway
+
+* Stripe
+
+### Deployment
+
+* Vercel (Frontend)
+* Render (Backend)
+
+---
+
+## 📂 Project Structure
+
+```text
+ShopNest
+│
+├── client
+│
+├── server
+│
+├── screenshots
+│
+└── README.md
 ```
-ShopNest/
-├── client/      # React frontend
-├── server/      # Express backend
-├── .env         # Environment variables
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+### Product Listing
+
+![Products](screenshots/products.png)
+
+### Shopping Cart
+
+![Cart](screenshots/cart.png)
+
+### Checkout & Payment 
+
+![Checkout](screenshots/checkout.png)
+
+---
+
+## ⚙️ Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/shopnest.git
+cd shopnest
+```
+
+### Install Frontend Dependencies
+
+```bash
+cd client
+npm install
+```
+
+### Install Backend Dependencies
+
+```bash
+cd ../server
+npm install
 ```
 
 ---
 
-## 🚀 How to Run Locally
+## 🔑 Environment Variables
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/your-username/shopnest.git
-   cd shopnest
-   ```
+Configure the required environment variables.
 
-2. **Install dependencies**
-   - For the frontend:
-     ```bash
-     cd client
-     npm install
-     ```
-   - For the backend:
-     ```bash
-     cd ../server
-     npm install
-     ```
+### Frontend
 
-3. **Setup `.env` files** in both `client` and `server` with:
-   - Firebase config
-   - MongoDB connection string
-   - Stripe secret key
+* Firebase Configuration
+* Stripe Publishable Key
 
-4. **Run both servers**
-   - Backend:
-     ```bash
-     cd server
-     node index.js
-     ```
-   - Frontend:
-     ```bash
-     cd client
-     npm start
-     ```
+### Backend
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+STRIPE_SECRET_KEY=your_stripe_secret_key
+FIREBASE_ADMIN_CONFIG=your_firebase_admin_credentials
+```
 
 ---
 
-## ✅ Test Login Details
+## ▶️ Run Locally
 
-> You can use Firebase Authentication for test user signups or logins. Admin users are identified using custom claims or backend logic.
+### Start Backend
+
+```bash
+cd server
+node index.js
+```
+
+### Start Frontend
+
+```bash
+cd client
+npm start
+```
 
 ---
 
-## 📦 Future Enhancements
+## 🎯 Future Enhancements
 
-- Order history and management
-- Search and filter options
-- Mark products as favorites and view them in a separate "Favorites" section
-- Collect user details like name and address during checkout to include in the payment process
+* Order history and tracking.
+* Product search and filtering.
+* Wishlist/Favorites functionality.
+* Enhanced checkout with shipping details.
+* User profile management.
+* Product reviews and ratings.
 
+---
+
+## 📚 Learning Outcomes
+
+This project helped me gain practical experience in:
+
+* Building full-stack MERN applications.
+* Implementing Firebase Authentication.
+* Integrating Stripe payment gateway.
+* Managing MongoDB Atlas databases.
+* Creating protected backend routes.
+* Deploying full-stack applications using Vercel and Render.
+
+---
+
+## 📄 License
+
+This project is developed for educational and portfolio purposes.
+
+---
+
+⭐ If you found this project useful, consider giving it a star.

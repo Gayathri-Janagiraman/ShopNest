@@ -89,19 +89,19 @@ ShopNest
 
 ### Home Page
 
-(screenshots/HomePage.png)
+![HomePage](screenshots/HomePage.png)
 
 ### Product Listing
 
-(screenshots/Product.png)
+![Product](screenshots/Product.png)
 
 ### Shopping Cart
 
-(screenshots/Cart.png)
+![Cart](screenshots/Cart.png)
 
 ### Checkout & Payment 
 
-![Payment](screenshots/Payments.png)
+![Payment](screenshots/Payment.png)
 
 ---
 

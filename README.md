@@ -4,7 +4,7 @@ ShopNest is a full-stack e-commerce web application built using the MERN Stack. 
 
 ## 🌐 Live Demo
 
-👉 YOUR_VERCEL_LINK_HERE
+https://shop-nest-puce.vercel.app/
 
 ---
 
@@ -89,19 +89,19 @@ ShopNest
 
 ### Home Page
 
-![Home Page](screenshots/home.png)
+(screenshots/HomePage.png)
 
 ### Product Listing
 
-![Products](screenshots/products.png)
+(screenshots/Product.png)
 
 ### Shopping Cart
 
-![Cart](screenshots/cart.png)
+(screenshots/Cart.png)
 
 ### Checkout & Payment 
 
-![Checkout](screenshots/checkout.png)
+![Payment](screenshots/Payments.png)
 
 ---
 
